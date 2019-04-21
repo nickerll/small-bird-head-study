@@ -1,0 +1,62 @@
+<!-- 头部 -->
+<header>
+	<nav>
+		<div class="nav_left">
+			<img src="img/logo.png" alt="">
+		</div>
+		<div class="nav_right">
+			<ul>
+				<li class="on" onclick="window.open('index.html')">
+					首页
+				</li>
+				<li>
+					小鸟掌学
+					<span class="jiantou"></span>
+					<div class="under">
+						<a href="小鸟掌学首页.html">小鸟掌学主页<span></span></a>
+						<a href="">小鸟掌学概述<span></span></a>
+						<a href="">对企业的价值<span></span></a>
+						<a href="">小鸟掌云<span></span></a>
+						<a href="">微课联盟<span></span></a>
+						<a href="">App下载<span></span></a>
+					</div>
+				</li>
+				<li onclick="window.open('小鸟动态.html')">
+					小鸟动态
+				</li>
+				<li>
+					企业文化
+					<span class="jiantou"></span>
+					<div class="under wen">
+						<a href="">公司理念<span></span></a>
+						<a href="">公司文化<span></span></a>
+						<a href="">公司氛围<span></span></a>
+					</div>
+				</li>
+				<li>
+					人力资源
+					<span class="jiantou"></span>
+					<div class="under renli">
+						<a href="">人才理念<span></span></a>
+						<a href="">团队介绍<span></span></a>
+						<a href="">招聘信息<span></span></a>
+					</div>
+				</li>
+				<li>
+					联系我们
+				</li>
+			</ul>
+		</div>
+	</nav>
+</header>
+<script type="text/javascript">
+	$('.nav_right ul li').hover(function () {
+		$(this).find('.under').stop().slideDown(700,'elasticOut')
+		
+	},function () {
+		$('.under').stop().slideUp()
+	}).click(function () {
+		$(this).addClass('on').siblings().removeClass('on')
+	})
+</script>
+<!-- 头部结束 -->

@@ -1,0 +1,142 @@
+.dongtai{
+	width: 1100px;
+    margin: 0 auto 100px;
+    min-height: 500px;
+    padding-top: 120px;
+    overflow: hidden;
+	position: relative;
+}
+.dongtai_title{
+	display: block;
+	text-align: center;
+	font-size: 54px;
+    color: #311759;
+}
+.dongtai_title span{
+	display: block;
+	font-size: 16px;
+	letter-spacing: 5px;
+	position: relative;
+}
+.dongtai_title span:after{
+	content: '';
+	position: absolute;
+	width: 37px;height: 8px;
+	background: url(../img/three_points01.png) no-repeat;
+	bottom: -15px;
+	left: 50%;
+	margin-left: -18.5px;
+}
+body{
+	font-family: STKaiti;
+	background: #f1f2f6;
+}
+.liebiao{
+	color: #311759;
+    font-size: 30px;
+    background: url(../img/pen_line_long.png) no-repeat 0 58px;
+    height: 60px;
+    position: relative;
+}
+.liebiao span{
+	display: inline-block;
+	width: 61px;height: 58px;
+	background: url(../img/pen_list.png) no-repeat;
+	position: absolute;
+	right: 0;
+	bottom: -3px;
+}
+
+.listcontent{
+	width: 1130px;
+	padding-top: 40px;
+	overflow: hidden;
+}
+.listcontent ul li{
+	width: 513px;
+    height: 202px;
+    float: left;
+    background: white;
+    padding: 36px 0 0 20px;
+    margin: 0 20px 30px 0;
+    border: 1px solid #fff;
+    cursor: pointer;
+    position: relative;
+	transition: all 0.3s;
+	list-style: none;
+}
+.listcontent ul li:hover{
+	border-color: #86759e;
+    transform: translateY(-6px);
+}
+.dongtaianiu{
+	
+}
+.dongtaimg{
+	display: block;
+	margin: 0 auto;
+}
+.gomore{
+	width: 58px;height: 58px;
+	margin: 20px auto;
+	background: url(../img/lis_more_btn_bg.png) 0 -58px no-repeat;
+	transition: all 0.3s;
+	cursor: pointer;
+}
+.gomore:hover{
+	background-position: 0 0;
+}
+.lsimg{
+	height: 168px;
+    width: 260px;
+    overflow: hidden;
+    float: left;
+    margin-right: 17px;
+}
+.lsimg img{
+	width: 100%;height: 100%;
+}
+.lsword{
+	width: 221px;
+    float: left;
+}
+.lswitle{
+	font-size: 20px;
+    color: #454548;
+    line-height: 26px;
+    max-height: 53px;
+    overflow: hidden;
+    padding-top: 15px;
+}
+.lstime{
+	color: #6b6a6f;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding-top: 2px;
+}
+.lscon{
+	padding-top: 8px;
+    color: #47464a;
+    line-height: 25px;
+    max-height: 75px;
+    overflow: hidden;
+    font-family: KaiTi_GB2312;
+    letter-spacing: 0px;
+	font-size: 14px;
+}
+.listover{
+	position: absolute;
+	left: 0;
+}
+.listcontent ul li:hover .listover{
+	left: 60px;
+	transition: all 0.5s;
+}
+.bolang{
+	width: 100%;
+	min-width: 1100px;
+	height: 33px;
+	background: url(../img/map_bottomimg.png) center top no-repeat;
+	position: relative;
+	bottom:0px;
+}

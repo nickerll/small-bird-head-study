@@ -1,0 +1,40 @@
+<!-- 尾部 -->
+<footer>
+	<div class="foot">
+		<div class="music">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+		<div class="shemi">蜀ICP备16002451号</div>
+	</div>
+</footer>
+<!-- 尾部结束 -->
+<!-- 返回顶部 -->
+		<div class="fix">
+			<div class="totop"></div>
+			<div class="youjian"></div>
+		</div>
+<script type="text/javascript">
+	// 音乐按钮
+	$('.music span').click(function(){
+		var mus=$(this).index()
+		$(this).append('<audio src="music/sound0'+mus+'.mp3" autoplay></audio>')
+	})
+	// 返回顶部
+	$(window).scroll(function(){
+		if($(this).scrollTop()>500){
+			$('.fix').fadeIn()
+		}else{
+			$('.fix').fadeOut(0)
+		}
+	})
+	
+	$('.totop').click(function(){
+		$('body,html').animate({'scrollTop':0},500)
+	})
+</script>

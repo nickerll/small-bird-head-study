@@ -1,0 +1,103 @@
+header{
+	width: 100%;
+	height: 120px;
+	background: url(../img/header_bg.jpg) top center;
+}
+nav{
+	width: 1100px;
+	height: 120px;
+	margin: 0 auto;
+}
+.nav_left{
+	width: 376px;
+	height: 120px;
+	float: left;
+}
+.nav_right{
+	width: 630px;
+	height: 25px;
+	float: right;
+	color: white;
+	font-size: 18px;
+}
+.nav_right ul{
+	margin-top: 40px;
+}
+.nav_right ul li:nth-child(1){
+	width: 63px;
+}
+.nav_right ul li:nth-child(3){
+	width: 95.3px;
+}
+.nav_right ul li:last-child{
+	width: 95.3px;
+}
+.nav_right ul li{
+	width: 120px;
+	height: 35px;
+	float: left;
+	position: relative;
+	cursor: pointer;
+	text-align: center;
+	
+}
+.nav_right ul li.on{
+	background: url(../img/nav_now_bg.png) center bottom no-repeat;
+}
+.nav_right ul li:hover{
+	background: url(../img/nav_now_bg.png) center bottom no-repeat;
+}
+.jiantou{
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background: url(../img/nav_xiajiantou.png);
+	float: right;
+	margin-right: 15px;
+}
+.under{
+	width: 180px;
+	height: 240px;
+	background: #36264a;
+	margin-left: -24px;
+	margin-top: 17px;
+	display: none;
+	position: absolute;
+	z-index: 5;
+}
+.under a{
+	width: 180px;height: 40px;
+	display: block;
+	padding-left: 28px;
+	text-align: left;
+	box-sizing: border-box;
+	line-height: 40px;
+	color: white;
+	font-size: 16px;
+	transition: all 0.3s;
+}
+.under a:hover{
+	background: #169ff3;
+}
+.under a span{
+	width: 5px;height: 8px;
+	display: inline-block;
+	float: right;
+	margin-top: 16px;
+	margin-right: 20px;
+	background: url(../img/nav_li_bg.png) right center no-repeat;
+	display: none;
+}
+.wen{
+	height: 120px;
+}
+.renli{
+	height: 120px;
+}
+.under a:hover span{
+	display: block;
+}
+.under a:hover{
+	padding-left: 45px;
+}
+/* 头部结束 */

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>文章列表</title>
+		<link rel="shortcut icon" href="img/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+		<link rel="stylesheet" type="text/css" href="css/animate.css"/>
+		<link rel="stylesheet" type="text/css" href="css/header.css"/>
+		<link rel="stylesheet" type="text/css" href="css/footer.css"/>
+		<link rel="stylesheet" type="text/css" href="css/小鸟动态列表.css"/>
+		<script src="js/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/move.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/listData.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/小鸟动态列表.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div class="liebaohead"></div>
+		<script type="text/javascript">
+			$('.liebaohead').load('header.html')
+		</script>
+		<div class="dongtai">
+			<h1 class="dongtai_title">小鸟动态<span>About Company</span></h1>
+			<div class="liebiao animated fadeInLeft">列表<span></span></div>
+			<div class="listcontent">
+				<ul>
+				</ul>
+			</div>
+			<div class="dongtaianiu">
+				<img src="img/list_gomore_bg.jpg" alt="" class="dongtaimg">
+				<div class="gomore"></div>
+			</div>
+			<!-- 模板 -->
+			<div id="item" style="display: none;">
+				<li class="cnotent" articleId='articleId'>
+					<div class="lsimg">
+						<img src="img/list_img01.jpg" alt="">
+					</div>
+					<div class="lsword">
+						<p class="lswitle">$atricletitle$</p>
+						<p class="lstime">$articletime$</p>
+						<p class="lscon">$articlecontnet$</p>
+					</div>
+					<img src="img/list_img_over_xiaojiantou.png" alt="" class="listover">
+				</li>
+			</div>
+		</div>
+		<div class="bolang"></div>
+		<div class="boom"></div>
+		<script type="text/javascript">
+			$('.boom').load('footer.html')
+		</script>
+	</body>
+</html>
